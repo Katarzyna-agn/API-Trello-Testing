@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "0afa3e21-6841-4dc4-be3f-1aabc7dae9af",
+		"name": "Trello_test/COLT1_2023",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20942280"
+	},
+	"item": [
+		{
+			"name": "Board",
+			"item": [
+				{
+					"name": "Table verification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/6447f20f6addaee1c3fbfc75?key={{key}}&token={{token}}&baseURL=api.trello.com&name=colt",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"6447f20f6addaee1c3fbfc75"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "baseURL",
+									"value": "api.trello.com"
+								},
+								{
+									"key": "name",
+									"value": "colt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rename a board",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/643839bd144d8a12b5c65bc2?key={{key}}&token={{token}}&name=my/colt1/2023&baseURL=api.trello.com",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"643839bd144d8a12b5c65bc2"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "my/colt1/2023"
+								},
+								{
+									"key": "baseURL",
+									"value": "api.trello.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?key=934e12b85c77a16d78c9153ab61c381f&token=ATTA6090c1eeb60f84ae15ffa241c0035fa0eb15bb85c5dc12d3a2ffb9e9bdf36a12124FA1EE&name=colt",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "934e12b85c77a16d78c9153ab61c381f"
+								},
+								{
+									"key": "token",
+									"value": "ATTA6090c1eeb60f84ae15ffa241c0035fa0eb15bb85c5dc12d3a2ffb9e9bdf36a12124FA1EE"
+								},
+								{
+									"key": "name",
+									"value": "colt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Board",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"item": [
+				{
+					"name": "Add list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/6447f20f6addaee1c3fbfc75/lists?name=in progress&key={{key}}&token={{token}}&baseURL=api.trello.com",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"6447f20f6addaee1c3fbfc75",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "in progress"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "baseURL",
+									"value": "api.trello.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Add  a Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards?idList=6447f46c5af22c9db24a9cdc&key={{key}}&token={{token}}&name=learning",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "6447f46c5af22c9db24a9cdc"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "baseURL",
+									"value": "{{baseURL}}",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "learning"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rename a card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/6447f91e6497ad91151c8abe?key={{key}}&token={{token}}&name=learning - today&baseURL={{baseURL}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"6447f91e6497ad91151c8abe"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "learning - today"
+								},
+								{
+									"key": "baseURL",
+									"value": "{{baseURL}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
